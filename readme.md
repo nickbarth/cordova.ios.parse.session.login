@@ -2,7 +2,7 @@
 
 ## About this Plugin
 
-Parse Sessio Login for iOS with JavaScript.
+Parse Session Login for iOS with JavaScript.
 
 ## Using the Plugin
 
