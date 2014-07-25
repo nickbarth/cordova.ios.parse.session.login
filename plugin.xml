@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="cordova.ios.parse.session.login" version="1.0.0">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>iOSParseSessionLogin</name>
+  <description>Plugin for iOS to SessionLogin to iOS Parse.</description>
+  <author>Shh</author>
+  <keywords>iOS Parse Session Login</keywords>
+  <license>MIT</license>
+
+  <!-- JavaScript interface -->
+  <js-module src="www/iOSParseSessionLogin.js" name="iOSParseSessionLogin" target="www/iOSParseSessionLogin.js">
+    <clobbers target="window.iOSParseSessionLogin" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="plugins">
+      <feature name="iOSParseSessionLogin">
+        <param name="ios-package" value="iOSParseSessionLogin"/>
+        <param name="onload" value="true" />
+      </feature>
+      <plugin name="iOSParseSessionLogin" value="iOSParseSessionLogin"/>
+    </config-file>
+    <header-file src="src/ios/iOSParseSessionLogin.h" />
+    <source-file src="src/ios/iOSParseSessionLogin.m" />
+  </platform>
+</plugin>
