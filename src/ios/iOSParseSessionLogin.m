@@ -12,7 +12,7 @@
 
     [PFUser becomeInBackground:session block:^(PFUser *user, NSError *error) {
         if (error) {
-          CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"{ \"error": \"Invalid Session Token\" }"];
+          CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"{ \"error\": \"Invalid Session Token\" }"];
           NSString* javaScript = [pluginResult toSuccessCallbackString:self.callbackId];
           [self writeJavascript:javaScript];
         } else {
