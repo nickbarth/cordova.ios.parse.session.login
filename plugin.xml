@@ -7,7 +7,7 @@
   <description>Plugin for iOS to SessionLogin to iOS Parse.</description>
   <author>Shh</author>
   <keywords>iOS Parse Session Login</keywords>
-  <license>MIT</license>
+  <license>CC0</license>
 
   <!-- JavaScript interface -->
   <js-module src="www/iOSParseSessionLogin.js" name="iOSParseSessionLogin" target="www/iOSParseSessionLogin.js">
